@@ -1,0 +1,790 @@
+/* example.css - Стили для статьи ЖК «Квартал Ивакино» */
+
+/* ===================== */
+/* ОБЩИЕ СТИЛИ */
+/* ===================== */
+
+.cs-article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cs-text,
+.cs-section-title,
+.cs-list li,
+.cs-quote {
+  text-align: left;
+}
+
+/* ===================== */
+/* HERO БЛОК */
+/* ===================== */
+
+.cs-hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cs-title {
+  max-width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.cs-hero-image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 30px;
+  border-radius: 12px;
+}
+
+.cs-subtitle {
+  text-align: left;
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* ===================== */
+/* СЛАЙДЕРЫ */
+/* ===================== */
+
+.cs-slider-section {
+  margin: 40px 0;
+}
+
+.mainSwiper, .mainSwiper2, .mainSwiper3, .mainSwiper4 {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainSwiper .swiper-slide img,
+.mainSwiper2 .swiper-slide img,
+.mainSwiper3 .swiper-slide img,
+.mainSwiper4 .swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===================== */
+/* СТРЕЛКИ НАВИГАЦИИ */
+/* ===================== */
+
+.mainSwiper .swiper-button-prev,
+.mainSwiper .swiper-button-next,
+.mainSwiper2 .swiper-button-prev,
+.mainSwiper2 .swiper-button-next,
+.mainSwiper3 .swiper-button-prev,
+.mainSwiper3 .swiper-button-next,
+.mainSwiper4 .swiper-button-prev,
+.mainSwiper4 .swiper-button-next {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background 0.3s ease;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #000;
+}
+
+.mainSwiper .swiper-button-prev:after,
+.mainSwiper .swiper-button-next:after,
+.mainSwiper2 .swiper-button-prev:after,
+.mainSwiper2 .swiper-button-next:after,
+.mainSwiper3 .swiper-button-prev:after,
+.mainSwiper3 .swiper-button-next:after,
+.mainSwiper4 .swiper-button-prev:after,
+.mainSwiper4 .swiper-button-next:after {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.mainSwiper:hover .swiper-button-prev,
+.mainSwiper:hover .swiper-button-next,
+.mainSwiper2:hover .swiper-button-prev,
+.mainSwiper2:hover .swiper-button-next,
+.mainSwiper3:hover .swiper-button-prev,
+.mainSwiper3:hover .swiper-button-next,
+.mainSwiper4:hover .swiper-button-prev,
+.mainSwiper4:hover .swiper-button-next {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mainSwiper .swiper-button-prev:hover,
+.mainSwiper .swiper-button-next:hover,
+.mainSwiper2 .swiper-button-prev:hover,
+.mainSwiper2 .swiper-button-next:hover,
+.mainSwiper3 .swiper-button-prev:hover,
+.mainSwiper3 .swiper-button-next:hover,
+.mainSwiper4 .swiper-button-prev:hover,
+.mainSwiper4 .swiper-button-next:hover {
+  background: #f0f0f0;
+  border-color: #ccc;
+}
+
+/* ===================== */
+/* НОМЕР ФОТО */
+/* ===================== */
+
+.mainSwiper .swiper-pagination-fraction,
+.mainSwiper2 .swiper-pagination-fraction,
+.mainSwiper3 .swiper-pagination-fraction,
+.mainSwiper4 .swiper-pagination-fraction {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  left: auto;
+  bottom: auto;
+  width: auto;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+/* ===================== */
+/* МИНИАТЮРЫ */
+/* ===================== */
+
+.thumbsSwiper, .thumbsSwiper2, .thumbsSwiper3, .thumbsSwiper4 {
+  margin-top: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.thumbsSwiper .swiper-wrapper,
+.thumbsSwiper2 .swiper-wrapper,
+.thumbsSwiper3 .swiper-wrapper,
+.thumbsSwiper4 .swiper-wrapper {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+}
+
+.thumbsSwiper .swiper-slide,
+.thumbsSwiper2 .swiper-slide,
+.thumbsSwiper3 .swiper-slide,
+.thumbsSwiper4 .swiper-slide {
+  width: 25% !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.thumbsSwiper .swiper-slide img,
+.thumbsSwiper2 .swiper-slide img,
+.thumbsSwiper3 .swiper-slide img,
+.thumbsSwiper4 .swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thumbsSwiper .swiper-slide-thumb-active,
+.thumbsSwiper2 .swiper-slide-thumb-active,
+.thumbsSwiper3 .swiper-slide-thumb-active,
+.thumbsSwiper4 .swiper-slide-thumb-active {
+  opacity: 1 !important;
+  border: 3px solid #0066ff;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* ===================== */
+/* ОПИСАНИЕ ПОД СЛАЙДЕРОМ */
+/* ===================== */
+
+.slider-description {
+  margin-top: 16px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.slider-description__text {
+  display: none;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #888;
+  margin: 0;
+  text-align: center;
+}
+
+.slider-description__text.active {
+  display: block;
+}
+
+/* ===================== */
+/* ФОТО BIKE */
+/* ===================== */
+
+.cs-bike-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.cs-image-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #888;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ===================== */
+/* ФОТО SAMOLET */
+/* ===================== */
+
+.cs-samolet-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* ===================== */
+/* ПЛАШКИ ПЛАНИРОВКИ */
+/* ===================== */
+
+.cs-plans-section {
+  margin: 40px 0;
+}
+
+.cs-plans-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.cs-plan-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.cs-plan-card:hover {
+  border-color: #999;
+}
+
+.cs-plan-card.active {
+  border: 2px solid #0066ff;
+  padding: 15px 19px;
+}
+
+.cs-plan-radio {
+  flex-shrink: 0;
+}
+
+.cs-plan-radio__circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.cs-plan-card.active .cs-plan-radio__circle {
+  border-color: #0066ff;
+  background: #0066ff;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+
+.cs-plan-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.cs-plan-card.active .cs-plan-title {
+  color: #0066ff;
+}
+
+/* ===================== */
+/* КНОПКА УЗНАТЬ ПОДРОБНЕЕ */
+/* ===================== */
+
+.cs-plans-button-wrapper {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.cs-plans-button {
+  display: inline-block;
+  background: #0066ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: inherit;
+}
+
+.cs-plans-button:hover {
+  background: #0052cc;
+}
+
+.cs-plans-footer {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-top: 16px;
+}
+
+.cs-plans-link {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cs-plans-link:hover {
+  color: #0066ff;
+  text-decoration: underline;
+}
+
+/* ===================== */
+/* ВИДЕО БЛОКИ */
+/* ===================== */
+
+.cs-video-block {
+  margin: 40px 0;
+}
+
+.cs-video-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.cs-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+  margin-bottom: 12px;
+}
+
+.cs-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.cs-video-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #888;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* ===================== */
+/* ОПРОС */
+/* ===================== */
+
+.cs-survey-section {
+  margin: 40px 0;
+  padding: 24px;
+  background: #f9f9f9;
+  border-radius: 16px;
+}
+
+.cs-survey-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cs-survey-question {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+.cs-survey-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.cs-survey-btn {
+  padding: 8px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cs-survey-btn:hover {
+  background: #f0f0f0;
+  border-color: #999;
+}
+
+.cs-survey-yes-block {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.cs-survey-thanks {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.cs-survey-button {
+  display: inline-block;
+  background: #9c27b0;
+  color: #fff;
+  padding: 12px 48px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cs-survey-button:hover {
+  background: #7b1fa2;
+}
+
+.cs-survey-no-block {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.cs-survey-check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cs-survey-check-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+}
+
+.cs-survey-check-item input {
+  display: none;
+}
+
+.cs-survey-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  transition: all 0.2s ease;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.cs-survey-check-item input:checked + .cs-survey-checkbox {
+  background: #9c27b0;
+  border-color: #9c27b0;
+}
+
+.cs-survey-check-item input:checked + .cs-survey-checkbox::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 12px;
+}
+
+.cs-survey-check-label {
+  cursor: pointer;
+}
+
+/* ===================== */
+/* ПОЛЕ ДРУГОЕ */
+/* ===================== */
+
+.cs-survey-other-field {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.cs-survey-other-field textarea {
+  width: 100%;
+  max-width: 300px;
+  height: 80px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.cs-survey-other-field textarea:focus {
+  outline: none;
+  border-color: #9c27b0;
+}
+
+.cs-survey-submit-btn {
+  display: block;
+  background: #9c27b0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  font-family: inherit;
+  text-align: center;
+}
+
+.cs-survey-submit-btn:hover {
+  background: #7b1fa2;
+}
+
+.cs-survey-footer {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+  margin: 20px 0 16px;
+  line-height: 1.5;
+}
+
+.cs-survey-footer-link {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cs-survey-footer-link:hover {
+  text-decoration: underline;
+}
+
+.cs-disclaimer {
+  font-size: 12px;
+  color: #666;
+  font-style: normal;
+  text-align: left;
+  line-height: 1.4;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+/* ===================== */
+/* АДАПТИВ */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .cs-article {
+    padding: 16px;
+  }
+  
+  .cs-hero {
+    padding: 0 16px;
+  }
+  
+  .cs-subtitle {
+    font-size: 16px;
+  }
+  
+  .cs-title {
+    font-size: 28px;
+  }
+  
+  .mainSwiper .swiper-button-prev,
+  .mainSwiper .swiper-button-next,
+  .mainSwiper2 .swiper-button-prev,
+  .mainSwiper2 .swiper-button-next,
+  .mainSwiper3 .swiper-button-prev,
+  .mainSwiper3 .swiper-button-next,
+  .mainSwiper4 .swiper-button-prev,
+  .mainSwiper4 .swiper-button-next {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .mainSwiper .swiper-button-prev:after,
+  .mainSwiper .swiper-button-next:after,
+  .mainSwiper2 .swiper-button-prev:after,
+  .mainSwiper2 .swiper-button-next:after,
+  .mainSwiper3 .swiper-button-prev:after,
+  .mainSwiper3 .swiper-button-next:after,
+  .mainSwiper4 .swiper-button-prev:after,
+  .mainSwiper4 .swiper-button-next:after {
+    font-size: 14px;
+  }
+  
+  .mainSwiper .swiper-pagination-fraction,
+  .mainSwiper2 .swiper-pagination-fraction,
+  .mainSwiper3 .swiper-pagination-fraction,
+  .mainSwiper4 .swiper-pagination-fraction {
+    top: 12px;
+    right: 12px;
+    font-size: 12px;
+    padding: 2px 10px;
+  }
+  
+  .slider-description__text {
+    font-size: 13px;
+  }
+  
+  .thumbsSwiper .swiper-slide-thumb-active,
+  .thumbsSwiper2 .swiper-slide-thumb-active,
+  .thumbsSwiper3 .swiper-slide-thumb-active,
+  .thumbsSwiper4 .swiper-slide-thumb-active {
+    border-width: 2px;
+  }
+  
+  .thumbsSwiper .swiper-wrapper,
+  .thumbsSwiper2 .swiper-wrapper,
+  .thumbsSwiper3 .swiper-wrapper,
+  .thumbsSwiper4 .swiper-wrapper {
+    gap: 8px;
+  }
+  
+  .cs-plan-card {
+    padding: 14px 16px;
+  }
+  
+  .cs-plan-card.active {
+    padding: 13px 15px;
+  }
+  
+  .cs-plan-title {
+    font-size: 14px;
+  }
+  
+  .cs-plans-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+  }
+  
+  .cs-plans-footer {
+    font-size: 11px;
+  }
+  
+  .cs-image-description {
+    font-size: 13px;
+  }
+  
+  .cs-video-text {
+    font-size: 16px;
+  }
+  
+  .cs-video-description {
+    font-size: 13px;
+  }
+  
+  .cs-survey-section {
+    padding: 16px;
+  }
+  
+  .cs-survey-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .cs-survey-question {
+    font-size: 18px;
+  }
+  
+  .cs-survey-buttons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .cs-survey-btn {
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+  
+  .cs-survey-check-label {
+    font-size: 14px;
+  }
+  
+  .cs-survey-footer {
+    font-size: 13px;
+  }
+  
+  .cs-disclaimer {
+    font-size: 11px;
+  }
+  
+  .cs-survey-other-field textarea {
+    max-width: 100%;
+  }
+  
+  .cs-survey-button {
+    padding: 12px 32px;
+  }
+}

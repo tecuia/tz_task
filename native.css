@@ -1,0 +1,530 @@
+/* promo.css */
+
+/* Reset */
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  line-height:1.6;
+  background:#fff;
+  color:#111;
+}
+
+
+/* ===================== */
+/* PAGE LAYOUT */
+/* ===================== */
+
+.cs-page{
+  display:flex;
+  flex-direction:column;
+}
+
+
+/* ===================== */
+/* PROGRESS BAR */
+/* ===================== */
+
+.cs-progress{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:3px;
+  background:#eee;
+  z-index:1000;
+}
+
+.cs-progress-bar{
+  height:100%;
+  width:0%;
+  background:#e31b1b;
+}
+
+
+/* ===================== */
+/* HERO */
+/* ===================== */
+
+.cs-hero{
+  padding:60px 0px;
+  text-align:center;
+}
+
+.cs-title{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.cs-subtitle{
+  color:#666;
+}
+
+.cs-hero-image{
+  width:100%;
+  margin-top:30px;
+  border-radius:10px;
+}
+
+
+/* ===================== */
+/* ARTICLE */
+/* ===================== */
+
+.cs-article{
+  max-width:720px;
+  margin:auto;
+  padding:20px;
+}
+
+.cs-section{
+  margin:60px 0;
+}
+
+.cs-section-title{
+  font-size:26px;
+  margin-bottom:20px;
+}
+
+.cs-text{
+  font-size:18px;
+}
+
+
+/* ===================== */
+/* IMAGE */
+/* ===================== */
+
+.cs-image{
+  width:100%;
+  border-radius:8px;
+}
+
+.cs-caption{
+  font-size:14px;
+  color:#777;
+  margin-top:6px;
+}
+
+
+/* ===================== */
+/* LIST */
+/* ===================== */
+
+.cs-list{
+  padding-left:20px;
+}
+
+
+/* ===================== */
+/* QUOTE */
+/* ===================== */
+
+.cs-quote{
+  font-size:22px;
+  font-style:italic;
+  border-left:4px solid #000;
+  padding-left:20px;
+}
+
+
+/* ===================== */
+/* CARDS */
+/* ===================== */
+
+.cs-cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.cs-card img{
+  width:100%;
+  border-radius:6px;
+}
+
+.cs-card h3{
+  margin-top:10px;
+}
+
+
+/* ===================== */
+/* CTA */
+/* ===================== */
+
+.cs-cta{
+  padding:80px 20px;
+  text-align:center;
+  background:#f5f5f5;
+}
+
+.cs-button{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 30px;
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+}
+
+
+/* ===================== */
+
+
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+
+.cs-footer{
+  text-align:center;
+  padding:40px;
+  color:#777;
+}
+
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+
+@media(max-width:768px){
+
+.cs-title{
+  font-size:28px;
+}
+
+.cs-cards{
+  grid-template-columns:1fr;
+}
+
+}
+
+/* ===================== */
+/* АРХИВ (archive.html) */
+/* ===================== */
+
+.archive-wrapper {
+  background: #f0f0f0 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.archive-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.archive-header {
+  display: block;
+  background: #fff;
+  padding: 16px 24px;
+  border-bottom: 1px solid #eaeaea;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.archive-header__logo {
+  display: block;
+  height: 32px;
+  width: auto;
+}
+
+/* ===================== */
+/* АРХИВ (archive.html) */
+/* ===================== */
+
+.archive-wrapper {
+  background: #e8e8e8 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.archive-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.archive-header {
+  display: block;
+  background: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  transition: opacity 0.2s ease;
+}
+
+.archive-header:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* Блок с фоновой картинкой */
+.archive-bg-wrapper {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.archive-bg-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Заглавный кейс */
+.archive-featured {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1280px;
+  width: 90%;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  flex-wrap: wrap;
+}
+
+.archive-featured__left {
+  flex-shrink: 0;
+}
+
+.archive-featured__image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.archive-featured__center {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.archive-featured__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.archive-featured__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.archive-featured__description {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+  margin: 0;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.archive-featured__right {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.archive-featured__button--primary {
+  width: 95px;
+  height: 50px;
+  padding: 12px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  font-family: Arial, sans-serif;
+  border: 1px solid #cfcfcf;
+}
+
+.archive-featured__button--primary:hover {
+  background: #fff;
+  color: #000;
+  border-color: #aaa;
+}
+
+.archive-featured__button--icon {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  font-family: Arial, sans-serif;
+  border: 1px solid #cfcfcf;
+}
+
+.archive-featured__button--icon:hover {
+  background: #fff;
+  color: #000;
+  border-color: #aaa;
+}
+
+/* Сетка кейсов */
+.archive-cases {
+  max-width: 1280px;
+  margin: 0 auto 40px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.archive-case {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.archive-case__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-family: "YS Text", Arial, Helvetica, sans-serif;
+  background: #3A3C4059;
+  padding: 2px 6px 3px;
+  border-radius: 8px;
+  z-index: 2;
+  font-weight: 700;
+}
+
+.archive-case__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 12;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  margin: 0;
+}
+
+.archive-case__content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+  flex: 1;
+}
+
+.archive-case__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.archive-case__subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.archive-case__stats {
+  font-size: 13px;
+  font-weight: 500;
+  color: #999;
+  margin: 0;
+}
+
+.archive-case__footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.archive-case__icon {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.archive-case__footer span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Адаптив */
+@media (max-width: 1200px) {
+  .archive-featured__center {
+    white-space: normal;
+  }
+  .archive-featured__title,
+  .archive-featured__subtitle,
+  .archive-featured__description {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 700px) {
+  .archive-featured {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .archive-featured__center {
+    align-items: center;
+  }
+  .archive-featured__right {
+    justify-content: center;
+  }
+  .archive-cases {
+    flex-direction: column;
+  }
+}

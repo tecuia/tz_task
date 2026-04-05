@@ -1,0 +1,46 @@
+.cs-s2s-container{
+  position:relative;
+  bottom:0;
+  left:0;
+  width:100%;
+  /* display:none; */
+  z-index:9999;
+  height: 80vh;
+  /* overflow: hidden; */
+}
+
+.cs-s2s-container.visible{
+  display:block;
+}
+
+.cs-s2s-preview{
+  /* max-width:500px; */
+  width: 100%;
+  margin:0 auto;
+  transition:transform .3s ease;
+}
+
+.cs-s2s-card{
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  /* box-shadow:0 10px 40px rgba(0,0,0,0.2); */
+}
+
+.cs-s2s-image{
+  width:100%;
+}
+
+.cs-s2s-content{
+  padding:16px;
+  text-align:center;
+}
+
+.cs-s2s-button{
+  margin-top:10px;
+  padding:12px 20px;
+  background:#000;
+  color:#fff;
+  border:none;
+  border-radius:8px;
+}
