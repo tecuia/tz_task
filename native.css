@@ -419,10 +419,15 @@ body{
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   position: relative;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.archive-case:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .archive-case__badge {
@@ -500,8 +505,71 @@ body{
   color: #000;
 }
 
-/* Адаптив */
-@media (max-width: 1200px) {
+/* Адаптив для экранов до 650px */
+@media (max-width: 650px) {
+  .archive-cases {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .archive-case {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .archive-case__title,
+  .archive-case__subtitle,
+  .archive-case__stats,
+  .archive-case__footer span {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  .archive-case__content {
+    padding: 12px;
+  }
+  
+  .archive-featured {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .archive-featured__center {
+    white-space: normal;
+    align-items: center;
+  }
+  
+  .archive-featured__title,
+  .archive-featured__subtitle,
+  .archive-featured__description {
+    white-space: normal;
+  }
+  
+  .archive-featured__right {
+    justify-content: center;
+  }
+  
+  .archive-bg-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .archive-bg-image {
+    height: 200px;
+  }
+}
+
+/* Адаптив для больших экранов (1200px+) */
+@media (min-width: 1201px) {
   .archive-featured__center {
     white-space: normal;
   }
@@ -512,19 +580,14 @@ body{
   }
 }
 
-@media (max-width: 700px) {
-  .archive-featured {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+/* Адаптив для средних экранов (651px - 1200px) */
+@media (min-width: 651px) and (max-width: 1200px) {
   .archive-featured__center {
-    align-items: center;
+    white-space: normal;
   }
-  .archive-featured__right {
-    justify-content: center;
-  }
-  .archive-cases {
-    flex-direction: column;
+  .archive-featured__title,
+  .archive-featured__subtitle,
+  .archive-featured__description {
+    white-space: normal;
   }
 }
